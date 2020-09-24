@@ -42,7 +42,7 @@ export const AddMovie = () => {
             <input className="form-control" ref={register} type="text" name="stars" id="stars" />
           </div>
           <div className="form-group">
-            <button type="submit" className="btn btn-primary">Save Todo</button>
+            <button type="submit" className="btn btn-primary">Save movie</button>
           </div>
         </form>
       </div>
