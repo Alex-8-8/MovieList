@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const SearchTitleInput = ({ onInputChange }) => (
+export const SearchInput = ({ onInputChange, searchTitle }) => (
   <div className="search-input mr-3 w-25">
-    <label htmlFor="searchTitle">Search by title</label>
+    <label htmlFor="searchTitle">{searchTitle}</label>
     <div className="input-group mb-3">
       <input
         id="searchTitle"

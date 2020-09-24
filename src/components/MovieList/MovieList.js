@@ -9,8 +9,7 @@ import {
   searchMoviesName,
   // loadCurrentMovie,
 } from '../../api/loadMovies';
-import { SearchTitleInput } from '../SearchTitleInput/SearchTitleInput';
-import { SearchNameInput } from '../SearchNameInput/SearchNameInput';
+import { SearchInput } from '../SearchInput/SearchInput';
 
 const MovieList = ({
   movies,
@@ -52,8 +51,8 @@ const MovieList = ({
       <div className="mt-3">
         <h3 className="mb-4">Movie List</h3>
         <div className="search-input-block">
-          <SearchTitleInput onInputChange={onInputByTitleChanged} />
-          <SearchNameInput onInputChange={onInputByNameChanged} />
+          <SearchInput onInputChange={onInputByTitleChanged} searchTitle={'Search by title'} />
+          <SearchInput onInputChange={onInputByNameChanged} searchTitle={'Search by name'} />
         </div>
         {movies.length > 0 ? (
           <table className="table table-striped mt-3">
@@ -61,7 +60,7 @@ const MovieList = ({
               <tr>
                 <th className="movie-row__cell">Movie Name</th>
                 <th className="movie-row__cell">Release Year</th>
-                <th className="movie-row__cell"></th>
+                <th className="movie-row__cell" />
               </tr>
             </thead>
             <tbody className="table-body">
