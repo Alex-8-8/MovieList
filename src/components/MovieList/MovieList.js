@@ -52,7 +52,7 @@ const MovieList = ({
         <h3 className="mb-4">Movie List</h3>
         <div className="search-input-block">
           <SearchInput onInputChange={onInputByTitleChanged} searchTitle="Search by title" />
-          <SearchInput onInputChange={onInputByNameChanged} searchTitle="Search by name" />
+          <SearchInput onInputChange={onInputByNameChanged} searchTitle="Search by actor name" />
         </div>
         {movies.length > 0 ? (
           <table className="table table-striped mt-3">
