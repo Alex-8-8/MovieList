@@ -1,0 +1,8 @@
+.movie-item {
+  &__release-date,
+  &__format,
+  &__stars {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}

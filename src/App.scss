@@ -1,0 +1,32 @@
+.App {
+  padding-bottom: 100px;
+  background: #8cafce;
+  color: #394856;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #394856;
+  &__link {
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  &__link:hover {
+    color: #8CAFCE;
+    text-decoration: none;
+  }
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  background: #F8F9FA;
+}
